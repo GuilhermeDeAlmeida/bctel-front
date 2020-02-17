@@ -1,0 +1,15 @@
+<div class="form-group">
+  <label for="field">{{ title }}</label>
+  <input
+    [required]="required"
+    [(ngModel)]="value"
+    name="field"
+    id="field"
+    class="form-control"
+    [type]="typeParam"
+    [placeholder]="placeHolderParam"
+    (input)="changedFieldValue($event.target.value)"
+  />
+
+  
+</div>

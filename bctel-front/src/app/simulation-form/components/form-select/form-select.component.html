@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label for="origin">{{ title }}</label>
+  <select [required] = "required" id="origin" class="form-control" [(ngModel)]= "selectedItem" (ngModelChange)="onItemSelected($event)">
+    <option *ngFor="let item of listItems"  (click) = "selectedItem(item)">{{ item }}</option>
+  </select>
+</div>
